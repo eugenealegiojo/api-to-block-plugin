@@ -1,0 +1,15 @@
+{
+    "name": "eugene/api",
+    "autoload": {
+        "psr-4": {
+            "Eugene\\API\\": "classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eugene Alegiojo",
+            "email": "eugenealegiojo@gmail.com"
+        }
+    ],
+    "require": {}
+}
