@@ -1,0 +1,34 @@
+{
+  "name": "eugene-api",
+  "version": "1.0.0",
+  "description": "A simple WordPress plugin that has API integration, WP-CLI supports and custom editor block.",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenealegiojo/eugene-api.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Gutenberg",
+    "Block"
+  ],
+  "author": "Eugene Alegiojo",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/eugenealegiojo/eugene-api/issues"
+  },
+  "homepage": "https://github.com/eugenealegiojo/eugene-api#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^27.4.0"
+  }
+}

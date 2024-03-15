@@ -1,12 +1,31 @@
 # Ignore all .DS_Store files...
 .DS_Store
 
-# Ignore all Thumbs.db files...
-Thumbs.db
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Ignore the node_modules folder...
-node_modules
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
 
-# ignore root vendor folder used for phpunit
-/vendor
-/composer.lock
+# Dependency directories
+node_modules/
+vendor
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of `npm pack`
+*.tgz
+
+# Output of `wp-scripts plugin-zip`
+*.zip
+
+# dotenv environment variables file
+.env
