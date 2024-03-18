@@ -6,6 +6,7 @@ use WP_CLI;
 use Eugene\API\Route;
 use Eugene\API\Command;
 use Eugene\API\Admin;
+use Eugene\API\Block;
 
 final class Main {
 
@@ -29,8 +30,8 @@ final class Main {
 		define( 'EUGENE_API_DIR', trailingslashit( plugin_dir_path( EUGENE_API_FILE ) ) );
 		define( 'EUGENE_API_URL', trailingslashit( plugin_dir_url( __DIR__ ) ) );
 		define( 'EUGENE_API_ASSETS_URL', EUGENE_API_URL . 'assets' );
-		define( 'EUGENE_API_BUILD_DIR', EUGENE_API_DIR . 'assets/build' );
-		define( 'EUGENE_API_BUILD_URL', EUGENE_API_URL . 'assets/build' );
+		define( 'EUGENE_API_BUILD_DIR', EUGENE_API_DIR . 'build' );
+		define( 'EUGENE_API_BUILD_URL', EUGENE_API_URL . 'build' );
 		define( 'EUGENE_API_VERSION', '1.0.0' );
 	}
 
@@ -61,6 +62,9 @@ final class Main {
 		if ( is_admin() ) {
 			( new Admin() )->init();
 		}
+
+		// Add block
+		( new Block() )->init();
 	}
 
 	/**

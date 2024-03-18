@@ -62,7 +62,7 @@
 				},
 				error: function(xhr, status, error) {
 					// Handle error
-					console.error(xhr.responseText);
+					console.error(error);
 				}
 			});
 		},

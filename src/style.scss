@@ -1,0 +1,52 @@
+/* Import the font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex");
+
+$font-family: "Roboto Flex", sans-serif;
+
+.eugene-api-block-wrap {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+	margin: 30px auto;
+	position: relative;
+	width: 100%;
+
+	table.eugene-api-block-table {
+		width: 100%;
+		border-collapse: collapse;
+
+		thead th:first-child {
+			border-top-left-radius: 6px;
+		}
+		thead th:last-child {
+			border-top-right-radius: 6px;
+		}
+
+		tr {
+			background-color: #fff;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f4f5;
+		}
+
+		th,
+		td {
+			text-align: left;
+			padding: 15px 20px;
+		}
+
+		th {
+			font-family: $font-family;
+			font-size: 16px;
+			color: #e3e3e3;
+			line-height: 1.4;
+			background-color: #40464d;
+		}
+		td {
+			font-family: $font-family;
+			font-size: 15px;
+			color: #797373;
+			line-height: 1.4;
+		}
+	}
+}
