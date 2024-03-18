@@ -175,7 +175,46 @@ class Route {
 			return [];
 		}
 
-		$body = json_decode( $body, true );
+		$body = $this->format_data( json_decode( $body, true ) );
 		return $body;
+	}
+
+	/**
+	 * Format response data before using.
+	 *
+	 * @param mixed
+	 */
+	public function format_data( $response ) {
+		// Bail out early if data doesn't exist.
+		if ( ! $response || ! isset( $response['data'] ) ) {
+			return $response;
+		}
+
+		$headers = [];
+
+		// Headers
+		if ( isset( $response['data']['headers'] ) ) {
+			foreach ( $response['data']['headers'] as $label ) {
+				$key = '';
+				if ( 'ID' === $label ) {
+					$key = 'id';
+				} elseif ( 'First Name' === $label ) {
+					$key = 'fname';
+				} elseif ( 'Last Name' === $label ) {
+					$key = 'lname';
+				} elseif ( 'Email' === $label ) {
+					$key = 'email';
+				} elseif ( 'Date' === $label ) {
+					$key = 'date';
+				}
+				$headers[ $key ] = $label;
+			}
+
+			if ( count( $headers ) > 0 ) {
+				$response['data']['headers'] = $headers;
+			}
+		}
+
+		return $response;
 	}
 }
