@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "eugene-api/api-block",
+  "version": "1.0.0",
+  "title": "Eugene API Block",
+  "category": "common",
+  "icon": "rest-api",
+  "description": "API block that displays data the AJAX endpoint.",
+  "example": {},
+  "attributes": {},
+  "supports": {
+    "align": true,
+    "alignWide": true,
+    "html": false
+  },
+  "textdomain": "eugene-api",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
