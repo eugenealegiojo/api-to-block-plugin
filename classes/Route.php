@@ -171,7 +171,7 @@ class Route {
 		$code     = wp_remote_retrieve_response_code( $response );
 		$body     = wp_remote_retrieve_body( $response );
 
-		if ( $code !== 200 || $body === 'error' || is_wp_error( $body ) ) {
+		if ( 200 !== $code || 'error' === $body || is_wp_error( $body ) ) {
 			return [];
 		}
 

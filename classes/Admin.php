@@ -19,7 +19,7 @@ class Admin {
 	/**
 	 * Initializes class.
 	 */
-	function init() {
+	public function init() {
 		$this->hooks();
 	}
 
@@ -92,7 +92,7 @@ class Admin {
 	/**
 	 * Render admin scripts/templates.
 	 */
-	function admin_footer() {
+	public function admin_footer() {
 		include EUGENE_API_DIR . 'includes/admin-js-templates.php';
 	}
 

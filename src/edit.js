@@ -67,7 +67,6 @@ const Edit = ({ attributes, setAttributes }) => {
 				</PanelBody>
 			</InspectorControls>
 
-
 			<div {...blockProps}>
 				<div className="eugene-api-block-wrap">
 					<table className="eugene-api-block-table">
