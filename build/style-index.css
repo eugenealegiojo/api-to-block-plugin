@@ -1,0 +1,51 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Flex);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+/* Import the font */
+.eugene-api-block-wrap {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  position: relative;
+  width: 100%;
+}
+.eugene-api-block-wrap table.eugene-api-block-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.eugene-api-block-wrap table.eugene-api-block-table thead th:first-child {
+  border-top-left-radius: 6px;
+}
+.eugene-api-block-wrap table.eugene-api-block-table thead th:last-child {
+  border-top-right-radius: 6px;
+}
+.eugene-api-block-wrap table.eugene-api-block-table tr {
+  background-color: #fff;
+}
+.eugene-api-block-wrap table.eugene-api-block-table tr:nth-child(even) {
+  background-color: #f2f4f5;
+}
+.eugene-api-block-wrap table.eugene-api-block-table th,
+.eugene-api-block-wrap table.eugene-api-block-table td {
+  text-align: left;
+  padding: 15px 20px;
+}
+.eugene-api-block-wrap table.eugene-api-block-table th {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  color: #e3e3e3;
+  line-height: 1.4;
+  background-color: #40464d;
+}
+.eugene-api-block-wrap table.eugene-api-block-table td {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 15px;
+  color: #797373;
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
